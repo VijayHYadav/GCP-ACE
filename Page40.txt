@@ -1,0 +1,54 @@
+Question #157
+
+You are deploying a production application on Compute Engine. You want to prevent anyone from accidentally destroying the instance by clicking the wrong button. What should you do?
+A. Disable the flag ג€Delete boot disk when instance is deleted.ג€
+B. Enable delete protection on the instance.
+C. Disable Automatic restart on the instance.
+D. Enable Preemptibility on the instance.
+
+Correct Answer: 
+    B 🗳️
+
+Question #158
+
+Your company uses a large number of Google Cloud services centralized in a single project. All teams have specific projects for testing and development. The
+DevOps team needs access to all of the production services in order to perform their job. You want to prevent Google Cloud product changes from broadening their permissions in the future. You want to follow Google-recommended practices. What should you do?
+
+A. Grant all members of the DevOps team the role of Project Editor on the organization level.
+B. Grant all members of the DevOps team the role of Project Editor on the production project.
+C. Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.
+D. Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the organization level.
+
+Correct Answer: 
+    C 🗳️
+
+Question #159
+
+You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to:
+* Restrict access so that suppliers can access only their own data.
+* Give suppliers write access to data only for 30 minutes.
+* Delete data that is over 45 days old.
+You have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use?
+(Choose two.)
+
+A. Build a lifecycle policy to delete Cloud Storage objects after 45 days.
+B. Use signed URLs to allow suppliers limited time access to store their objects.
+C. Set up an SFTP server for your application, and create a separate user for each supplier.
+D. Build a Cloud function that triggers a timer of 45 days to delete objects that have expired.
+E. Develop a script that loops through all Cloud Storage buckets and deletes any buckets that are older than 45 days.
+
+Correct Answer: 
+    AB 🗳️
+
+Question #160
+
+Your company wants to standardize the creation and management of multiple Google Cloud resources using Infrastructure as Code. You want to minimize the amount of repetitive code needed to manage the environment. What should you do?
+
+A. Develop templates for the environment using Cloud Deployment Manager.
+B. Use curl in a terminal to send a REST request to the relevant Google API for each individual resource.
+C. Use the Cloud Console interface to provision and manage all related resources.
+D. Create a bash script that contains all requirement steps as gcloud commands.
+
+Correct Answer: 
+    A 🗳️
+

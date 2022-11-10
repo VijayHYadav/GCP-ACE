@@ -1,0 +1,68 @@
+Question #77 
+
+You need to provide a cost estimate for a Kubernetes cluster using the GCP pricing calculator for Kubernetes. Your workload requires high IOPs, and you will also be using disk snapshots. You start by entering the number of nodes, average hours, and average days. What should you do next?
+
+A. Fill in local SSD. Fill in persistent disk storage and snapshot storage.
+B. Fill in local SSD. Add estimated cost for cluster management.
+C. Select Add GPUs. Fill in persistent disk storage and snapshot storage.
+D. Select Add GPUs. Add estimated cost for cluster management.
+
+Correct Answer: 
+    A 🗳️ 
+
+Question #78 
+
+You are using Google Kubernetes Engine with autoscaling enabled to host a new application. You want to expose this new application to the public, using HTTPS on a public IP address. What should you do?
+
+A. Create a Kubernetes Service of type NodePort for your application, and a Kubernetes Ingress to expose this Service via a Cloud Load Balancer.
+B. Create a Kubernetes Service of type ClusterIP for your application. Configure the public DNS name of your application using the IP of this Service.
+C. Create a Kubernetes Service of type NodePort to expose the application on port 443 of each node of the Kubernetes cluster. Configure the public DNS name of your application with the IP of every node of the cluster to achieve load-balancing.
+D. Create a HAProxy pod in the cluster to load-balance the traffic to all the pods of the application. Forward the public traffic to HAProxy with an iptable rule. Configure the DNS name of your application using the public IP of the node HAProxy is running on.
+
+
+A ClusterIP:
+    service is the default Kubernetes service. It gives you a service inside your cluster that other apps inside your cluster can access. There is no external access.
+A NodePort:
+    service is the most primitive way to get external traffic directly to your service. NodePort, as the name implies, opens a specific port on all the Nodes (the VMs), and any traffic that is sent to this port is forwarded to the service.
+A LoadBalancer: 
+    service is the standard way to expose a service to the internet. On GKE, this will spin up a Network Load Balancer that will give you a single IP address that will forward all traffic to your service.
+Ingress
+    Unlike all the above examples, Ingress is actually NOT a type of service. Instead, it sits in front of multiple services and act as a “smart router” or entrypoint into your cluster.
+
+    You can do a lot of different things with an Ingress, and there are many types of Ingress controllers that have different capabilities.
+
+    The default GKE ingress controller will spin up a HTTP(S) Load Balancer for you. This will let you do both path based and subdomain based routing to backend services. For example, you can send everything on foo.yourdomain.com to the foo service, and everything under the yourdomain.com/bar/ path to the bar service.
+
+Correct Answer: 
+    A 🗳️
+
+Question #79 
+
+You need to enable traffic between multiple groups of Compute Engine instances that are currently running two different GCP projects. Each group of Compute
+Engine instances is running in its own VPC. What should you do?
+
+
+A. Verify that both projects are in a GCP Organization. Create a new VPC and add all instances.
+B. Verify that both projects are in a GCP Organization. Share the VPC from one project and request that the Compute Engine instances in the other project use this shared VPC.
+C. Verify that you are the Project Administrator of both projects. Create two new VPCs and add all instances.
+D. Verify that you are the Project Administrator of both projects. Create a new VPC and add all instances.
+
+Correct Answer: 
+    B 🗳️ 
+    Shared VPC allows an organization to connect resources from multiple projects to a common Virtual Private Cloud (VPC) network, so that they can communicate with each other securely and efficiently using internal IPs from that network. When you use Shared VPC, you designate a project as a host project and attach one or more other service projects to it. The VPC networks in the host project are called Shared VPC networks. Eligible resources from service projects can use subnets in the Shared VPC network
+
+Question #80 
+
+You want to add a new auditor to a Google Cloud Platform project. The auditor should be allowed to read, but not modify, all project items.
+How should you configure the auditor's permissions?
+
+A. Create a custom role with view-only project permissions. Add the user's account to the custom role.
+B. Create a custom role with view-only service permissions. Add the user's account to the custom role.
+C. Select the built-in IAM project Viewer role. Add the user's account to this role.
+D. Select the built-in IAM service Viewer role. Add the user's account to this role.
+
+Correct Answer: 
+    C 🗳️
+    C (67%)
+    A (33%)
+

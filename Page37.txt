@@ -1,0 +1,54 @@
+Question #145
+
+Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1`"standard`"2 nodes. You need to deploy additional pods requiring n2`"highmem`"16 nodes without any downtime. What should you do?
+
+A. Use gcloud container clusters upgrade. Deploy the new services.
+B. Create a new Node Pool and specify machine type n2ג€"highmemג€"16. Deploy the new pods.
+C. Create a new cluster with n2ג€"highmemג€"16 nodes. Redeploy the pods and delete the old cluster.
+D. Create a new cluster with both n1ג€"standardג€"2 and n2ג€"highmemג€"16 nodes. Redeploy the pods and delete the old cluster.
+
+Correct Answer: 
+    B 🗳️
+
+Question #146
+
+You have an application that uses Cloud Spanner as a database backend to keep current state information about users. Cloud Bigtable logs all events triggered by users. You export Cloud Spanner data to Cloud Storage during daily backups. One of your analysts asks you to join data from Cloud Spanner and Cloud
+Bigtable for specific users. You want to complete this ad hoc request as efficiently as possible. What should you do?
+
+A. Create a dataflow job that copies data from Cloud Bigtable and Cloud Storage for specific users.
+B. Create a dataflow job that copies data from Cloud Bigtable and Cloud Spanner for specific users.
+C. Create a Cloud Dataproc cluster that runs a Spark job to extract data from Cloud Bigtable and Cloud Storage for specific users.
+D. Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through user fields, and apply appropriate filters.
+
+Correct Answer: 
+    B 🗳️
+    D (73%)
+    B (27%)
+
+Question #147
+
+You are hosting an application from Compute Engine virtual machines (VMs) in us`"central1`"a. You want to adjust your design to support the failure of a single
+Compute Engine zone, eliminate downtime, and minimize cost. What should you do?
+
+A. ג€" Create Compute Engine resources in usג€"central1ג€"b. ג€" Balance the load across both usג€"central1ג€"a and usג€"central1ג€"b.
+B. ג€" Create a Managed Instance Group and specify usג€"central1ג€"a as the zone. ג€" Configure the Health Check with a short Health Interval.
+C. ג€" Create an HTTP(S) Load Balancer. ג€" Create one or more global forwarding rules to direct traffic to your VMs.
+D. ג€" Perform regular backups of your application. ג€" Create a Cloud Monitoring Alert and be notified if your application becomes unavailable. ג€" Restore from backups when notified.
+
+Correct Answer: 
+    A 🗳️
+
+Question #148
+
+A colleague handed over a Google Cloud Platform project for you to maintain. As part of a security checkup, you want to review who has been granted the Project
+Owner role. What should you do?
+
+A. In the console, validate which SSH keys have been stored as project-wide keys.
+B. Navigate to Identity-Aware Proxy and check the permissions for these resources.
+C. Enable Audit Logs on the IAM & admin page for all resources, and validate the results.
+D. Use the command gcloud projects getג€"iamג€"policy to view the current role assignments.
+
+Correct Answer: 
+    A 🗳️
+    D (100%)
+

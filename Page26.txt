@@ -1,0 +1,57 @@
+Question #101
+
+You need to host an application on a Compute Engine instance in a project shared with other teams. You want to prevent the other teams from accidentally causing downtime on that application. Which feature should you use?
+
+A. Use a Shielded VM.
+B. Use a Preemptible VM.
+C. Use a sole-tenant node.
+D. Enable deletion protection on the instance.
+
+Correct Answer: 
+    D 🗳️
+
+Question #102
+
+Your organization needs to grant users access to query datasets in BigQuery but prevent them from accidentally deleting the datasets. You want a solution that follows Google-recommended practices. What should you do?
+
+A. Add users to roles/bigquery user role only, instead of roles/bigquery dataOwner.
+B. Add users to roles/bigquery dataEditor role only, instead of roles/bigquery dataOwner.
+C. Create a custom role by removing delete permissions, and add users to that role only.
+D. Create a custom role by removing delete permissions. Add users to the group, and then add the group to the custom role.
+
+Correct Answer: 
+    B 🗳️
+
+    A - allows to view metadata, but won't allow to run queries
+        When applied to a dataset, this role provides the ability to read the dataset's metadata and list tables in the dataset.
+
+        When applied to a project, this role also provides the ability to run jobs, including queries, within the project. A principal with this role can enumerate their own jobs, cancel their own jobs, and enumerate datasets within a project. Additionally, allows the creation of new datasets within the project; the creator is granted the BigQuery Data Owner role (roles/bigquery.dataOwner) on these new datasets.
+
+    B - allows to run queries, but also to delete
+    C - doesn't follow GCP best practices since Google recommends assigning roles to groups, and groups to users
+    D - correct combination of permissions and Google's best practices
+
+    D (65%)
+    A (30%
+
+Question #103
+
+You have a developer laptop with the Cloud SDK installed on Ubuntu. The Cloud SDK was installed from the Google Cloud Ubuntu package repository. You want to test your application locally on your laptop with Cloud Datastore. What should you do?
+
+
+A. Export Cloud Datastore data using gcloud datastore export.
+B. Create a Cloud Datastore index using gcloud datastore indexes create.
+C. Install the google-cloud-sdk-datastore-emulator component using the apt get install command.
+D. Install the cloud-datastore-emulator component using the gcloud components install command.
+
+Correct Answer: C 🗳️
+
+Question #104
+
+Your company set up a complex organizational structure on Google Cloud. The structure includes hundreds of folders and projects. Only a few team members should be able to view the hierarchical structure. You need to assign minimum permissions to these team members, and you want to follow Google-recommended practices. What should you do?
+
+
+A. Add the users to roles/browser role.
+B. Add the users to roles/iam.roleViewer role.
+C. Add the users to a group, and add this group to roles/browser.
+D. Add the users to a group, and add this group to roles/iam.roleViewer role.

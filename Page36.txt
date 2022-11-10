@@ -1,0 +1,52 @@
+Question #141
+
+You created several resources in multiple Google Cloud projects. All projects are linked to different billing accounts. To better estimate future charges, you want to have a single visual representation of all costs incurred. You want to include new cost data as soon as possible. What should you do?
+
+A. Configure Billing Data Export to BigQuery and visualize the data in Data Studio.
+B. Visit the Cost Table page to get a CSV export and visualize it using Data Studio.
+C. Fill all resources in the Pricing Calculator to get an estimate of the monthly cost.
+D. Use the Reports view in the Cloud Billing Console to view the desired cost information.
+
+Correct Answer: 
+    A 🗳️
+
+Question #142
+
+Your company has workloads running on Compute Engine and on-premises. The Google Cloud Virtual Private Cloud (VPC) is connected to your WAN over a
+Virtual Private Network (VPN). You need to deploy a new Compute Engine instance and ensure that no public Internet traffic can be routed to it. What should you do?
+
+A. Create the instance without a public IP address.
+B. Create the instance with Private Google Access enabled.
+C. Create a deny-all egress firewall rule on the VPC network.
+D. Create a route on the VPC to route all traffic to the instance over the VPN tunnel.
+
+Correct Answer: 
+    A 🗳️
+
+    B - this allows internal communicaiton, but does nothing to limit public traffic
+    C - deny all is nice, but it's for egress -- we're looking for ingress
+    D - this is way to invasive and doesn't explicitly address the issue of preventing public internet traffic from reaching your instance -- if it does, someone let me know how.
+
+Question #143
+
+Your team maintains the infrastructure for your organization. The current infrastructure requires changes. You need to share your proposed changes with the rest of the team. You want to follow Google's recommended best practices. What should you do?
+
+A. Use Deployment Manager templates to describe the proposed changes and store them in a Cloud Storage bucket.
+B. Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.
+C. Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket.
+D. Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source Repositories.
+
+Correct Answer: 
+    B 🗳️
+
+Question #144
+
+You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least management overhead and the least number of services. What should you do?
+
+A. 1. Update your instances' metadata to add the following value: snapshotג€"schedule: 0 1 * * * 2. Update your instances' metadata to add the following value: snapshotג€"retention: 30
+B. 1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: - Schedule frequency: Daily - Start time: 1:00 AM ג€" 2:00 AM - Autodelete snapshots after: 30 days
+C. 1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.
+D. 1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1:00 AM.
+
+Correct Answer: 
+    B 🗳️

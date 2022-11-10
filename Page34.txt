@@ -1,0 +1,48 @@
+An application generates daily reports in a Compute Engine virtual machine (VM). The VM is in the project corp-iot-insights. Your team operates only in the project corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to configure access so that the daily reports from the VM are available in the bucket corp-aggregate-reports-storage and use as few steps as possible while following Google-recommended practices. What should you do?
+
+A. Move both projects under the same folder.
+B. Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.
+C. Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights.
+D. Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.
+
+Correct Answer: 
+    B 🗳️
+
+Question #134
+
+You built an application on your development laptop that uses Google Cloud services. Your application uses Application Default Credentials for authentication and works fine on your development laptop. You want to migrate this application to a Compute Engine virtual machine (VM) and set up authentication using Google- recommended practices and minimal changes. What should you do?
+
+A. Assign appropriate access for Google services to the service account used by the Compute Engine VM.
+B. Create a service account with appropriate access for Google services, and configure the application to use this account.
+C. Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your application.
+D. Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your application.
+
+Correct Answer: 
+    B 🗳️
+    When you use a GCP service within your app (code), you have to use its client libraries. When you instantiate a client with client libraries you can pass it a Service Account key, which will define on behalf of which SA the client will be acting. That's how you can configure your app to use a particular service account.
+
+Question #135
+
+You need to create a Compute Engine instance in a new project that doesn't exist yet. What should you do?
+
+A. Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new project.
+B. Enable the Compute Engine API in the Cloud Console, use the Cloud SDK to create the instance, and then use the --project flag to specify a new project.
+C. Using the Cloud SDK, create the new instance, and use the --project flag to specify the new project. Answer yes when prompted by Cloud SDK to enable the Compute Engine API.
+D. Enable the Compute Engine API in the Cloud Console. Go to the Compute Engine section of the Console to create a new instance, and look for the Create In A New Project option in the creation form.
+
+
+Correct Answer: B 🗳️
+Project creation is always a first step as we need to link billing account before creating any new resources. So Answer is A
+
+Question #136
+
+Your company runs one batch process in an on-premises server that takes around 30 hours to complete. The task runs monthly, can be performed offline, and must be restarted if interrupted. You want to migrate this workload to the cloud while minimizing cost. What should you do?
+
+A. Migrate the workload to a Compute Engine Preemptible VM.
+B. Migrate the workload to a Google Kubernetes Engine cluster with Preemptible nodes.
+C. Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.
+D. Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU Utilization. Migrate the workload.
+
+Correct Answer: 
+    B 🗳️
+

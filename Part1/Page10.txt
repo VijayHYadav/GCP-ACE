@@ -1,0 +1,51 @@
+Question #37
+
+You created a Google Cloud Platform project with an App Engine application inside the project. You initially configured the application to be served from the us- central region. Now you want the application to be served from the asia-northeast1 region. What should you do?
+
+Correct Answer: 
+    D 🗳️
+
+Question #38
+
+You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?
+
+A. Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.
+B. Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.
+C. Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to the role.
+D. Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to a new group. Add the group to the role.
+
+Correct Answer:
+    B 🗳️
+     google best practice to assign users roles is to have them in a group and assign that group a role so B seems to be the correct option.
+
+Question #39
+You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?
+
+A. Enable the Node Auto-Repair feature for your GKE cluster.
+B. Enable the Node Auto-Upgrades feature for your GKE cluster.
+C. Select the latest available cluster version for your GKE cluster.
+D. Select ג€Container-Optimized OS (cos)ג€ as a node image for your GKE cluster.
+
+Correct Answer: 
+    B 🗳️
+
+Question #40
+
+You have an instance group that you want to load balance. You want the load balancer to terminate the client SSL session. The instance group is used to serve a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?
+
+A. Configure an HTTP(S) load balancer.
+B. Configure an internal TCP load balancer.
+C. Configure an external SSL proxy load balancer.
+D. Configure an external TCP proxy load balancer.
+
+Correct Answer: 
+    A 🗳️
+
+    According to the documentation of SSL Proxy Load Balacing on Google, "SSL Proxy Load Balancing is intended for non-HTTP(S) traffic. For HTTP(S) traffic, we recommend that you use HTTP(S) Load Balancing." in my opinion A should be the most suitable choice.
+
+    For HTTP(s) Load balancer, the client SSL session terminates at the load balancer. A is the correct option.
+    
+    C is the answer SSL LB to terminate SSL
+https://cloud.google.com/load-balancing/docs/choosing-load-balancer
+
+

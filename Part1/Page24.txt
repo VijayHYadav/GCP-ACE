@@ -1,0 +1,63 @@
+Question #93
+
+Your company uses BigQuery for data warehousing. Over time, many different business units in your company have created 1000+ datasets across hundreds of projects. Your CIO wants you to examine all datasets to find tables that contain an employee_ssn column. You want to minimize effort in performing this task.
+What should you do?
+
+A. Go to Data Catalog and search for employee_ssn in the search box.
+B. Write a shell script that uses the bq command line tool to loop through all the projects in your organization.
+C. Write a script that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find the employee_ssn column.
+D. Write a Cloud Dataflow job that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find employee_ssn column.
+
+Correct Answer: 
+    A 🗳️
+
+    The Data Catalog API can be used to:
+    - Search for data assets across different projects and GCP resources
+    - Create tags and tag templates to add structured business metadata unique to your organization
+    - Automate the tagging process of data assets as part of a data ingestion pipeline
+    
+    Data Catalog can be used to search the column with keyword:value pair,
+
+    Filter your search by adding a keyword:value to your search terms in the search box:
+    Keyword Description
+    name: Match data asset name
+    ***column: Match column name or nested column name
+    description: Match table description
+
+Question #94
+
+You create a Deployment with 2 replicas in a Google Kubernetes Engine cluster that has a single preemptible node pool. After a few minutes, you use kubectl to examine the status of your Pod and observe that one of them is still in Pending status:
+
+A. The pending Pod's resource requests are too large to fit on a single node of the cluster.
+B. Too many Pods are already running in the cluster, and there are not enough resources left to schedule the pending Pod.
+C. The node pool is configured with a service account that does not have permission to pull the container image used by the pending Pod.
+D. The pending Pod was originally scheduled on a node that has been preempted between the creation of the Deployment and your verification of the Pods' status. It is currently being rescheduled on a new node.
+
+Correct Answer: 
+    B 🗳️
+    B (58%)
+    D (42%)
+
+Question #95
+
+You want to find out when users were added to Cloud Spanner Identity Access Management (IAM) roles on your Google Cloud Platform (GCP) project. What should you do in the GCP Console?
+
+A. Open the Cloud Spanner console to review configurations.
+B. Open the IAM & admin console to review IAM policies for Cloud Spanner roles.
+C. Go to the Stackdriver Monitoring console and review information for Cloud Spanner.
+D. Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles.
+
+Correct Answer: 
+    B 🗳️ D (100%)
+
+Question #96
+
+Your company implemented BigQuery as an enterprise data warehouse. Users from multiple business units run queries on this data warehouse. However, you notice that query costs for BigQuery are very high, and you need to control costs. Which two methods should you use? (Choose two.)
+
+A. Split the users from business units to multiple projects.
+B. Apply a user- or project-level custom query quota for BigQuery data warehouse.
+C. Create separate copies of your BigQuery data warehouse for each business unit.
+D. Split your BigQuery data warehouse into multiple data warehouses for each business unit.
+E. Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project.
+
+Correct Answer: BE 🗳️

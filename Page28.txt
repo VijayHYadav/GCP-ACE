@@ -1,0 +1,49 @@
+Question #109
+
+Your organization has user identities in Active Directory. Your organization wants to use Active Directory as their source of truth for identities. Your organization wants to have full control over the Google accounts used by employees for all Google services, including your Google Cloud Platform (GCP) organization. What should you do?
+
+A. Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity.
+B. Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity.
+C. Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console.
+D. Ask each employee to create a Google account using self signup. Require that each employee use their company email address and password.
+
+Correct Answer: 
+    A 🗳️
+
+    Directory Sync
+    Google Cloud Directory Sync enables administrators to synchronize users, groups and other data from an Active Directory/LDAP service to their Google Cloud domain directory
+
+Question #110 #Understand
+
+You have successfully created a development environment in a project for an application. This application uses Compute Engine and Cloud SQL. Now you need to create a production environment for this application. The security team has forbidden the existence of network routes between these 2 environments and has asked you to follow Google-recommended practices. What should you do?
+
+A. Create a new project, enable the Compute Engine and Cloud SQL APIs in that project, and replicate the setup you have created in the development environment.
+B. Create a new production subnet in the existing VPC and a new production Cloud SQL instance in your existing project, and deploy your application using those resources.
+C. Create a new project, modify your existing VPC to be a Shared VPC, share that VPC with your new project, and replicate the setup you have in the development environment in that new project in the Shared VPC.
+D. Ask the security team to grant you the Project Editor role in an existing production project used by another division of your company. Once they grant you that role, replicate the setup you have in the development environment in that project.
+
+Correct Answer: 
+    A 🗳️
+
+Question #111
+
+Your management has asked an external auditor to review all the resources in a specific project. The security team has enabled the Organization Policy called
+Domain Restricted Sharing on the organization node by specifying only your Cloud Identity domain. You want the auditor to only be able to view, but not modify, the resources in that project. What should you do?
+
+A. Ask the auditor for their Google account, and give them the Viewer role on the project.
+B. Ask the auditor for their Google account, and give them the Security Reviewer role on the project.
+C. Create a temporary account for the auditor in Cloud Identity, and give that account the Viewer role on the project.
+D. Create a temporary account for the auditor in Cloud Identity, and give that account the Security Reviewer role on the project.
+
+Correct Answer: 
+    C 🗳️
+
+You have a workload running on Compute Engine that is critical to your business. You want to ensure that the data on the boot disk of this workload is backed up regularly. You need to be able to restore a backup as quickly as possible in case of disaster. You also want older backups to be cleaned automatically to save on cost. You want to follow Google-recommended practices. What should you do?
+
+A. Create a Cloud Function to create an instance template.
+B. Create a snapshot schedule for the disk using the desired interval.
+C. Create a cron job to create a new disk from the disk using gcloud.
+D. Create a Cloud Task to create an image and export it to Cloud Storage.
+
+Correct Answer: 
+    B 🗳️

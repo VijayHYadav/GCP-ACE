@@ -1,0 +1,65 @@
+Question #129
+
+Your Dataproc cluster runs in a single Virtual Private Cloud (VPC) network in a single subnet with range 172.16.20.128/25. There are no private IP addresses available in the VPC network. You want to add new VMs to communicate with your cluster using the minimum number of steps. What should you do?
+
+A. Modify the existing subnet range to 172.16.20.0/24.
+B. Create a new Secondary IP Range in the VPC and configure the VMs to use that range.
+C. Create a new VPC network for the VMs. Enable VPC Peering between the VMs' VPC network and the Dataproc cluster VPC network.
+D. Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network and the VMs VPC network. Configure a custom Route exchange.
+
+Correct Answer: A 🗳️
+    A (52%)
+    C (48%)
+
+    No it can't be as you can't modify ip address but can expand. There is no ip in the existing vpc so you have to create a new vpc and connect it using peering.
+
+Question #130
+
+You manage an App Engine Service that aggregates and visualizes data from BigQuery. The application is deployed with the default App Engine Service account.
+The data that needs to be visualized resides in a different project managed by another team. You do not have access to this project, but you want your application to be able to read data from the BigQuery dataset. What should you do?
+
+A. Ask the other team to grant your default App Engine Service account the role of BigQuery Job User.
+B. Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.
+C. In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.
+D. In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.
+
+Correct Answer: 
+    B 🗳️
+
+Question #131
+
+You need to create a copy of a custom Compute Engine virtual machine (VM) to facilitate an expected increase in application traffic due to a business acquisition.
+What should you do?
+
+A. Create a Compute Engine snapshot of your base VM. Create your images from that snapshot.
+B. Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot.
+C. Create a custom Compute Engine image from a snapshot. Create your images from that image.
+D. Create a custom Compute Engine image from a snapshot. Create your instances from that image.
+
+Correct Answer: 
+    D 🗳️
+
+    Both B and D works. but B is much faster to do
+    D
+        A custom image belongs only to your project. To create an instance with a custom image, you must first have a custom image.
+
+        snapshot --> image -----> creating our instance from image that we got from snapshot
+
+Question #132
+
+You have deployed an application on a single Compute Engine instance. The application writes logs to disk. Users start reporting errors with the application. You want to diagnose the problem. What should you do?
+
+A. Navigate to Cloud Logging and view the application logs.
+B. Connect to the instance's serial console and read the application logs.
+C. Configure a Health Check on the instance and set a Low Healthy Threshold value.
+D. Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.
+
+Correct Answer: D 🗳️
+
+D (58%)
+B (33%)
+A => Activity logging is enabled by default for all Compute Engine projects.
+
+
+Answer is A after rethinking and doing some research by focusing words "App Engine", which has by default enabled Request Logs which has App logs on each request and those logs are enabled for Cloud Logging ..
+Wrong! Request Logs has the LIST of App logs and ONLY associated with that request! Read the links you provide!

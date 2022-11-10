@@ -1,0 +1,48 @@
+Question #65
+
+You need to deploy an application, which is packaged in a container image, in a new project. The application exposes an HTTP endpoint and receives very few requests per day. You want to minimize costs. What should you do?
+
+A. Deploy the container on Cloud Run.
+B. Deploy the container on Cloud Run on GKE.
+C. Deploy the container on App Engine Flexible.
+D. Deploy the container on GKE with cluster autoscaling and horizontal pod autoscaling enabled.
+
+Correct Answer: 
+    A 🗳️
+
+
+Question #66
+
+Your company has an existing GCP organization with hundreds of projects and a billing account. Your company recently acquired another company that also has hundreds of projects and its own billing account. You would like to consolidate all GCP costs of both GCP organizations onto a single invoice. You would like to consolidate all costs as of tomorrow. What should you do?
+
+
+Correct Answer: 
+    A 🗳️
+    'A' looks better. 'B' cannot be done. 'C' and 'D' can be done, but migration takes time, also once you delink a billing account to link to new one will derail live projects. A is best choice here.
+
+Question #67
+
+You built an application on Google Cloud that uses Cloud Spanner. Your support team needs to monitor the environment but should not have access to table data.
+You need a streamlined solution to grant the correct permissions to your support team, and you want to follow Google-recommended practices. What should you do?
+
+A. Add the support team group to the roles/monitoring.viewer role
+B. Add the support team group to the roles/spanner.databaseUser role.
+C. Add the support team group to the roles/spanner.databaseReader role.
+D. Add the support team group to the roles/stackdriver.accounts.viewer role.
+
+Correct Answer: 
+    A 🗳️ 
+
+Question #68
+
+For analysis purposes, you need to send all the logs from all of your Compute Engine instances to a BigQuery dataset called platform-logs. You have already installed the Cloud Logging agent on all the instances. You want to minimize cost. What should you do?
+
+
+A. 1. Give the BigQuery Data Editor role on the platform-logs dataset to the service accounts used by your instances. 2. Update your instances' metadata to add the following value: logs-destination: bq://platform-logs.
+B. 1. In Cloud Logging, create a logs export with a Cloud Pub/Sub topic called logs as a sink. 2. Create a Cloud Function that is triggered by messages in the logs topic. 3. Configure that Cloud Function to drop logs that are not from Compute Engine and to insert Compute Engine logs in the platform-logs dataset.
+C. 1. In Cloud Logging, create a filter to view only Compute Engine logs. 2. Click Create Export. 3. Choose BigQuery as Sink Service, and the platform-logs dataset as Sink Destination.
+D. 1. Create a Cloud Function that has the BigQuery User role on the platform-logs dataset. 2. Configure this Cloud Function to create a BigQuery Job that executes this query: INSERT INTO dataset.platform-logs (timestamp, log) SELECT timestamp, log FROM compute.logs WHERE timestamp > DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY) 3. Use Cloud Scheduler to trigger this Cloud Function once a day.
+
+Correct Answer: 
+    C 🗳️
+

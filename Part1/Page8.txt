@@ -1,0 +1,49 @@
+Question #29
+
+You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains sensitive data. You want access to the content to be removed after four hours. The external company does not have a Google account to which you can grant specific user-based access privileges. You want to use the most secure method that requires the fewest steps. What should you do?
+
+A. Create a signed URL with a four-hour expiration and share the URL with the company.
+B. Set object access to 'public' and use object lifecycle management to remove the object after four hours.
+C. Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from the storage bucket after four hours.
+D. Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. Delete the bucket after four hours have passed.
+
+Correct Answer: 
+    A 🗳️
+
+Question #30
+
+You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to make sure that each node of the cluster will run a monitoring pod that sends container metrics to a third-party monitoring solution. What should you do?
+
+A. Deploy the monitoring pod in a StatefulSet object.
+B. Deploy the monitoring pod in a DaemonSet object.
+C. Reference the monitoring pod in a Deployment object.
+D. Reference the monitoring pod in a cluster initializer at the GKE cluster creation time.
+
+Correct Answer: 
+    B 🗳️
+
+Question #31
+
+You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is currently disabled. You will use a service account to authenticate your application to the API. You want to make sure your application can use Cloud Pub/Sub. What should you do?
+
+A. Enable the Cloud Pub/Sub API in the API Library on the GCP Console.
+B. Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it.
+C. Use Deployment Manager to deploy your application. Rely on the automatic enablement of all APIs used by the application being deployed.
+D. Grant the App Engine Default service account the role of Cloud Pub/Sub Admin. Have your application enable the API on the first connection to Cloud Pub/ Sub.
+
+Correct Answer: 
+    A 🗳️
+
+Question #32
+
+You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to consolidate reporting under the same Stackdriver
+Monitoring dashboard. What should you do?
+
+A. Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.
+B. For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver Account Editor in all other projects.
+C. Configure a single Stackdriver account, and link all projects to the same account.
+D. Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group.
+
+Correct Answer: 
+    C 🗳️
+

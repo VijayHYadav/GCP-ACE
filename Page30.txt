@@ -1,0 +1,56 @@
+Question #117
+
+An employee was terminated, but their access to Google Cloud was not removed until 2 weeks later. You need to find out if this employee accessed any sensitive customer information after their termination. What should you do?
+
+A. View System Event Logs in Cloud Logging. Search for the user's email as the principal.
+B. View System Event Logs in Cloud Logging. Search for the service account associated with the user.
+C. View Data Access audit logs in Cloud Logging. Search for the user's email as the principal.
+D. View the Admin Activity log in Cloud Logging. Search for the service account associated with the user.
+
+Correct Answer: 
+    C 🗳️
+
+Question #118
+
+You need to create a custom IAM role for use with a GCP service. All permissions in the role must be suitable for production use. You also want to clearly share with your organization the status of the custom role. This will be the first version of the custom role. What should you do?
+
+A. Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.
+B. Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to BETA while testing the role permissions.
+C. Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.
+D. Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to BETA while testing the role permissions.
+
+Correct Answer: 
+    A 🗳️
+    SUPPORTED The permission is fully supported in custom roles.
+    TESTING The permission is being tested to check its compatibility with custom roles. You can include the permission in custom roles, but you might see unexpected behavior. Not recommended for production use.
+    NOT_SUPPORTED The permission is not supported in custom roles.
+    You can't use TESTING as it is not good for prod. And you need first version which should be ALPHA. Answer should be A.
+
+Question #119
+
+Your company has a large quantity of unstructured data in different file formats. You want to perform ETL transformations on the data. You need to make the data accessible on Google Cloud so it can be processed by a Dataflow job. What should you do?
+
+A. Upload the data to BigQuery using the bq command line tool.
+B. Upload the data to Cloud Storage using the gsutil command line tool.
+C. Upload the data into Cloud SQL using the import function in the console.
+D. Upload the data into Cloud Spanner using the import function in the console.
+
+Correct Answer: 
+    B 🗳️
+    "large quantity" : Cloud Storage or BigQuery
+    "files" a file is nothing but an Object
+    So Cloud Storage is the better option.
+
+Question #120
+
+You need to manage multiple Google Cloud projects in the fewest steps possible. You want to configure the Google Cloud SDK command line interface (CLI) so that you can easily manage multiple projects. What should you do?
+
+A. 1. Create a configuration for each project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.
+B. 1. Create a configuration for each project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project
+C. 1. Use the default configuration for one project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.
+D. 1. Use the default configuration for one project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project.
+
+Correct Answer: 
+    A 🗳️
+
+    Cloud SDK comes with a default configuration. To create multiple configurations, use gcloud config configurations create, and gcloud config configurations activate to switch between them.

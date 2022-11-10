@@ -1,0 +1,53 @@
+Question #89
+
+You are migrating a production-critical on-premises application that requires 96 vCPUs to perform its task. You want to make sure the application runs in a similar environment on GCP. What should you do?
+
+A. When creating the VM, use machine type n1-standard-96.
+B. When creating the VM, use Intel Skylake as the CPU platform.
+C. Create the VM using Compute Engine default settings. Use gcloud to modify the running instance to have 96 vCPUs.
+D. Start the VM using Compute Engine default settings, and adjust as you go based on Rightsizing Recommendations.
+
+Correct Answer: 
+    A 🗳️
+
+Question #90 # TODO
+
+You want to configure a solution for archiving data in a Cloud Storage bucket. The solution must be cost-effective. Data with multiple versions should be archived after 30 days. Previous versions are accessed once a month for reporting. This archive data is also occasionally updated at month-end. What should you do?
+
+A. Add a bucket lifecycle rule that archives data with newer versions after 30 days to Coldline Storage.
+B. Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.
+C. Add a bucket lifecycle rule that archives data from regional storage after 30 days to Coldline Storage.
+D. Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage.
+
+Correct Answer: 
+    B 🗳️
+
+# Question #91
+
+Your company's infrastructure is on-premises, but all machines are running at maximum capacity. You want to burst to Google Cloud. The workloads on Google
+Cloud must be able to directly communicate to the workloads on-premises using a private IP range. What should you do?
+
+A. In Google Cloud, configure the VPC as a host for Shared VPC.
+B. In Google Cloud, configure the VPC for VPC Network Peering.
+C. Create bastion hosts both in your on-premises environment and on Google Cloud. Configure both as proxy servers using their public IP addresses.
+D. Set up Cloud VPN between the infrastructure on-premises and Google Cloud.
+ 
+Correct Answer: 
+    D 🗳️
+    Access internal IPs directly
+    Your VPC network's internal (RFC 1918) IP addresses are directly accessible from your on-premises network with peering, no NAT device or VPN tunnel required.
+
+    Hybrid made easy
+    Today’s business climate demands flexibility. Connecting your on-premises resources to your cloud resources seamlessly, with minimum latency or interruption, is a business-critical requirement. The speed and reliability of Cloud Interconnect lets you extend your organization’s data center network into Google Cloud, simply and easily, while options such as Cloud VPN provide flexibility for all your workloads. This unlocks the potential of hybrid app development and all the benefits the cloud has to offer.
+
+Question #92
+
+You want to select and configure a solution for storing and archiving data on Google Cloud Platform. You need to support compliance objectives for data from one geographic location. This data is archived after 30 days and needs to be accessed annually. What should you do?
+
+A. Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.
+B. Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.
+C. Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.
+D. Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.
+
+Correct Answer: 
+    D 🗳️

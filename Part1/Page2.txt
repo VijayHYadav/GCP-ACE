@@ -1,0 +1,32 @@
+You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?
+
+=>  Use kubectl config use-context and 
+    kubectl config view to review the output.
+
+Your company uses Cloud Storage to store application backup files for disaster recovery purposes. You want to follow Google's recommended practices. Which storage option should you use?
+
+=> Coldline Storage
+
+Several employees at your company have been creating projects with Cloud Platform and paying for it with their personal credit cards, which the company reimburses. The company wants to centralize all these projects under a single, new billing account. What should you do?
+
+=> 
+A. Contact cloud-billing@google.com with your bank account details and request a corporate billing account for your company.
+B. Create a ticket with Google Support and wait for their call to share your credit card details over the phone.
+C. In the Google Platform Console, go to the Resource Manage and move all projects to the root Organizarion.
+D. In the Google Cloud Platform Console, create a new billing account and set up a payment method.
+
+
+C is Wrong, moving to one Org doesn't affect billing linkage at all.
+D is correct
+
+You have an application that looks for its licensing server on the IP 10.0.3.21. You need to deploy the licensing server on Compute Engine. You do not want to change the configuration of the application and want the application to be able to reach the licensing server. What should you do?
+
+=>
+A. Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.
+B. Reserve the IP 10.0.3.21 as a static public IP address using gcloud and assign it to the licensing server.
+C. Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server.
+D. Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address.
+
+A is correct.
+
+IP 10.0.3.21 is internal by default, and to ensure that it will be static non-changing it should be selected as static internal ip address.

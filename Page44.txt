@@ -1,0 +1,66 @@
+Question #173
+
+You are developing a financial trading application that will be used globally. Data is stored and queried using a relational structure, and clients from all over the world should get the exact identical state of the data. The application will be deployed in multiple regions to provide the lowest latency to end users. You need to select a storage option for the application data while minimizing latency. What should you do?
+
+A. Use Cloud Bigtable for data storage.
+B. Use Cloud SQL for data storage.
+C. Use Cloud Spanner for data storage.
+D. Use Firestore for data storage.
+
+Correct Answer: 
+    C 🗳️
+
+Question #174
+
+You are about to deploy a new Enterprise Resource Planning (ERP) system on Google Cloud. The application holds the full database in-memory for fast data access, and you need to configure the most appropriate resources on Google Cloud for this application. What should you do?
+
+A. Provision preemptible Compute Engine instances.
+B. Provision Compute Engine instances with GPUs attached.
+C. Provision Compute Engine instances with local SSDs attached.
+D. Provision Compute Engine instances with M1 machine type.
+
+Correct Answer: 
+    D 🗳️
+
+    M1 machine series
+    Medium in-memory databases such as SAP HANA
+    Tasks that require intensive use of memory with higher memory-to-vCPU ratios than the general-purpose high-memory machine types.
+    In-memory databases and in-memory analytics, business warehousing (BW) workloads, genomics analysis, SQL analysis services.
+    Microsoft SQL Server and similar databases.
+
+Question #175
+
+You have developed an application that consists of multiple microservices, with each microservice packaged in its own Docker container image. You want to deploy the entire application on Google Kubernetes Engine so that each microservice can be scaled individually. What should you do?
+
+A. Create and deploy a Custom Resource Definition per microservice.
+B. Create and deploy a Docker Compose File.
+C. Create and deploy a Job per microservice.
+D. Create and deploy a Deployment per microservice.
+
+Correct Answer: 
+    D 🗳️
+
+    keyword "each microservice can be scaled individually"!
+    Can deploy each service through
+        kubectl apply -f <deployment_config.yaml>
+
+
+    I was a little unsure about this question, here's how I understand why D is the best answer
+    A. Custom Resource Definition... we have docker containers already, which is an established kind of resource for Kubernetes. We don't need to create a whole new type of resource, so this is wrong.
+    B. Docker Compose is a wholly different tool from Kubernetes.
+    C. A Kubernetes job describes a specific "task" which involves a bunch of pods and things. It makes no sense to have one job per microservice, a "Job" would be a bunch of different microservices executing together.
+    D. is the leftover, correct answer. You can add scaling to each Deployment, an important aspect of the question.
+
+Question #176
+
+You will have several applications running on different Compute Engine instances in the same project. You want to specify at a more granular level the service account each instance uses when calling Google Cloud APIs. What should you do?
+
+A. When creating the instances, specify a Service Account for each instance.
+B. When creating the instances, assign the name of each Service Account as instance metadata.
+C. After starting the instances, use gcloud compute instances update to specify a Service Account for each instance.
+D. After starting the instances, use gcloud compute instances update to assign the name of the relevant Service Account as instance metadata.
+
+Correct Answer: 
+    A 🗳️
+    the instances are not running yet, when you create an instance using the gcloud command-line tool or the Google Cloud Console, you can specify which service account the instance uses when calling Google Cloud APIs
+

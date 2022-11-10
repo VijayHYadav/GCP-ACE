@@ -1,0 +1,48 @@
+Question #153
+
+You have created a code snippet that should be triggered whenever a new file is uploaded to a Cloud Storage bucket. You want to deploy this code snippet. What should you do?
+
+A. Use App Engine and configure Cloud Scheduler to trigger the application using Pub/Sub.
+B. Use Cloud Functions and configure the bucket as a trigger resource.
+C. Use Google Kubernetes Engine and configure a CronJob to trigger the application using Pub/Sub.
+D. Use Dataflow as a batch job, and configure the bucket as a data source.
+
+Correct Answer: 
+    B 🗳️
+
+Question #154
+
+You have been asked to set up Object Lifecycle Management for objects stored in storage buckets. The objects are written once and accessed frequently for 30 days. After 30 days, the objects are not read again unless there is a special need. The objects should be kept for three years, and you need to minimize cost.
+What should you do?
+
+A. Set up a policy that uses Nearline storage for 30 days and then moves to Archive storage for three years.
+B. Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years.
+C. Set up a policy that uses Nearline storage for 30 days, then moves the Coldline for one year, and then moves to Archive storage for two years.
+D. Set up a policy that uses Standard storage for 30 days, then moves to Coldline for one year, and then moves to Archive storage for two years.
+
+Correct Answer: 
+    B 🗳️
+
+Question #155
+
+You are storing sensitive information in a Cloud Storage bucket. For legal reasons, you need to be able to record all requests that read any of the stored data. You want to make sure you comply with these requirements. What should you do?
+
+A. Enable the Identity Aware Proxy API on the project.
+B. Scan the bucket using the Data Loss Prevention API.
+C. Allow only a single Service Account access to read the data.
+D. Enable Data Access audit logs for the Cloud Storage API.
+
+Correct Answer: 
+    D 🗳️
+
+Question #156
+
+You are the team lead of a group of 10 developers. You provided each developer with an individual Google Cloud Project that they can use as their personal sandbox to experiment with different Google Cloud solutions. You want to be notified if any of the developers are spending above $500 per month on their sandbox environment. What should you do?
+
+A. Create a single budget for all projects and configure budget alerts on this budget.
+B. Create a separate billing account per sandbox project and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per billing account.
+C. Create a budget per project and configure budget alerts on all of these budgets.
+D. Create a single billing account for all sandbox projects and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per project.
+
+Correct Answer: 
+    C 🗳️

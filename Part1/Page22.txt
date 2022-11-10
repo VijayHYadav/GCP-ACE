@@ -1,0 +1,68 @@
+Question #85
+
+You have a large 5-TB AVRO file stored in a Cloud Storage bucket. Your analysts are proficient only in SQL and need access to the data stored in this file. You want to find a cost-effective way to complete their request as soon as possible. What should you do?
+
+A. Load data in Cloud Datastore and run a SQL query against it.
+B. Create a BigQuery table and load data in BigQuery. Run a SQL query on this table and drop this table after you complete your request.
+C. Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request.
+D. Create a Hadoop cluster and copy the AVRO file to NDFS by compressing it. Load the file in a hive table and provide access to your analysts so that they can run SQL queries.
+
+Correct Answer: 
+    C 🗳️
+
+    A. ....Load data in Cloud Datastore... (Not Correct because Cloud Datastore is not a good option to run SQL Queries)
+
+    B. ...Load data in BigQuery.... (Not Cost Effective because loading the data which is already present in the bucket into BigQuery again is expensive)
+
+    C. Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request.
+    (This is the right answer as it meets all the requirements from the question)
+
+    D. Create a Hadoop cluster and copy the AVRO file to NDFS by compressing it. Load the file in a hive table and provide access to your analysts so that they can run SQL queries.
+    (Too roundabout and indirect. Not the right option)
+
+Question #86
+
+You need to verify that a Google Cloud Platform service account was created at a particular time. What should you do?
+
+A. Filter the Activity log to view the Configuration category. Filter the Resource type to Service Account.
+B. Filter the Activity log to view the Configuration category. Filter the Resource type to Google Project.
+C. Filter the Activity log to view the Data Access category. Filter the Resource type to Service Account.
+D. Filter the Activity log to view the Data Access category. Filter the Resource type to Google Project.
+
+Correct Answer: 
+    D 🗳️
+    The 4 types of logs are: Admin Activity audit logs, Data Access audit logs, System Event audit logs, and Policy Denied audit logs.
+
+Question #87
+
+You deployed an LDAP server on Compute Engine that is reachable via TLS through port 636 using UDP. You want to make sure it is reachable by clients over that port. What should you do?
+
+A. Add the network tag allow-udp-636 to the VM instance running the LDAP server.
+B. Create a route called allow-udp-636 and set the next hop to be the VM instance running the LDAP server.
+C. Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.
+D. Add a network tag of your choice to the instance running the LDAP server. Create a firewall rule to allow egress on UDP port 636 for that network tag.
+
+Correct Answer: 
+    C 🗳️
+    you can use tags and then set firewall rules for instances with such tag.
+    A tag is simply a character string added to a tags field in a resource, such as Compute Engine virtual machine (VM) instances or instance templates. A tag is not a separate resource, so you cannot create it separately. All resources with that string are considered to have that tag. Tags enable you to make firewall rules and routes applicable to specific VM instances.
+
+Question #88
+
+You need to set a budget alert for use of Compute Engineer services on one of the three Google Cloud Platform projects that you manage. All three projects are linked to a single billing account. What should you do?
+
+A. Verify that you are the project billing administrator. Select the associated billing account and create a budget and alert for the appropriate project.
+B. Verify that you are the project billing administrator. Select the associated billing account and create a budget and a custom alert.
+C. Verify that you are the project administrator. Select the associated billing account and create a budget for the appropriate project.
+D. Verify that you are project administrator. Select the associated billing account and create a budget and a custom alert.
+
+Correct Answer: 
+    Website ans B 🗳️
+    A 100% voted
+
+    there is no such role as Project Billing Administrator - 
+    it should be Project Billing Manager but he can't create budgets, 
+    the only one who can - Billing Account Administrator. 
+    Nor Project Administrator exists. 
+    Very tricky question, maybe the option a wrong, hope smb will catch it on exam and pass some light on real variants.
+

@@ -1,0 +1,74 @@
+Question #169
+
+Your auditor wants to view your organization's use of data in Google Cloud. The auditor is most interested in auditing who accessed data in Cloud Storage buckets. You need to help the auditor access the data they need. What should you do?
+
+A. Turn on Data Access Logs for the buckets they want to audit, and then build a query in the log viewer that filters on Cloud Storage.
+B. Assign the appropriate permissions, and then create a Data Studio report on Admin Activity Audit Logs.
+C. Assign the appropriate permissions, and then use Cloud Monitoring to review metrics.
+D. Use the export logs API to provide the Admin Activity Audit Logs in the format they want.
+
+Correct Answer: 
+    D 🗳️
+    A (100%)
+
+    Explain: 1
+    Data access log are not enabled by default due to the fact that it incurs costs.
+    So you need to enable it first.
+    And then you can filter it in the log viewer
+
+    Since the auditor wants to know who accessed the cloud storage data, we need data acces logs for cloud storage.
+
+    Explain: 2
+    Types of audit logs
+    Cloud Audit Logs provides the following audit logs for each Cloud project, folder, and organization:
+
+    Admin Activity audit logs
+    Data Access audit logs
+    System Event audit logs
+    Policy Denied audit logs
+
+    ***Data Access audit logs contain API calls that read the configuration or metadata of resources, as well as user-driven API calls that create, modify, or read user-provided resource data.
+
+Question #170
+
+You received a JSON file that contained a private key of a Service Account in order to get access to several resources in a Google Cloud project. You downloaded and installed the Cloud SDK and want to use this private key for authentication and authorization when performing gcloud commands. What should you do?
+
+A. Use the command gcloud auth login and point it to the private key.
+B. Use the command gcloud auth activate-service-account and point it to the private key.
+C. Place the private key file in the installation directory of the Cloud SDK and rename it to ג€credentials.jsonג€.
+D. Place the private key file in your home directory and rename it to ג€GOOGLE_APPLICATION_CREDENTIALSג€.
+
+Correct Answer: 
+    B 🗳️
+
+    To activate your service account, run gcloud auth activate-service-account:
+    gcloud auth activate-service-account [ACCOUNT] --key-file=[KEY_FILE]
+
+Question #171 Understand
+
+You are working with a Cloud SQL MySQL database at your company. You need to retain a month-end copy of the database for three years for audit purposes.
+What should you do?
+
+A. Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.
+B. Save the automatic first-of-the-month backup for three years. Store the backup file in an Archive class Cloud Storage bucket.
+C. Set up an on-demand backup for the first of the month. Write the backup to an Archive class Cloud Storage bucket.
+D. Convert the automatic first-of-the-month backup to an export file. Write the export file to a Coldline class Cloud Storage bucket.
+
+Correct Answer: 
+    B 🗳️
+    A (100%)
+
+Question #172
+
+You are monitoring an application and receive user feedback that a specific error is spiking. You notice that the error is caused by a Service Account having insufficient permissions. You are able to solve the problem but want to be notified if the problem recurs. What should you do?
+
+A. In the Log Viewer, filter the logs on severity 'Error' and the name of the Service Account.
+B. Create a sink to BigQuery to export all the logs. Create a Data Studio dashboard on the exported logs.
+C. Create a custom log-based metric for the specific error to be used in an Alerting Policy.
+D. Grant Project Owner access to the Service Account.
+
+Correct Answer: 
+    A 🗳️
+    C (100%)
+    Just checked in GC Console. Created custom log-based metric and set up an allert
+

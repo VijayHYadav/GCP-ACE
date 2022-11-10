@@ -1,0 +1,49 @@
+Question #177 Understand the Question
+
+You are creating an application that will run on Google Kubernetes Engine. You have identified MongoDB as the most suitable database system for your application and want to deploy a managed MongoDB environment that provides a support SLA. What should you do?
+
+A. Create a Cloud Bigtable cluster, and use the HBase API.
+B. Deploy MongoDB Atlas from the Google Cloud Marketplace.
+C. Download a MongoDB installation package, and run it on Compute Engine instances.
+D. Download a MongoDB installation package, and run it on a Managed Instance Group.
+
+Correct Answer: C 🗳️
+
+Question #178 Confuse
+
+You are managing a project for the Business Intelligence (BI) department in your company. A data pipeline ingests data into BigQuery via streaming. You want the users in the BI department to be able to run the custom SQL queries against the latest data in BigQuery. What should you do?
+
+A. Create a Data Studio dashboard that uses the related BigQuery tables as a source and give the BI team view access to the Data Studio dashboard.
+B. Create a Service Account for the BI team and distribute a new private key to each member of the BI team.
+C. Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse.
+D. Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.
+
+Correct Answer: C 🗳️
+
+Question #179 
+
+Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on
+Google Cloud to match these requirements. What should you do?
+
+
+A. 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
+
+B. 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.
+
+C. 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
+
+D. 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.
+
+
+Question #180
+
+You have just created a new project which will be used to deploy a globally distributed application. You will use Cloud Spanner for data storage. You want to create a Cloud Spanner instance. You want to perform the first step in preparation of creating the instance. What should you do?
+
+A. Enable the Cloud Spanner API.
+B. Configure your Cloud Spanner instance to be multi-regional.
+C. Create a new VPC network with subnetworks in all desired regions.
+D. Grant yourself the IAM role of Cloud Spanner Admin.
+
+Correct Answer: 
+    A 🗳️
+

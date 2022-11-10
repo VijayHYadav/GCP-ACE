@@ -1,0 +1,64 @@
+Question #33
+
+You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?
+
+A. Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
+B. Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
+C. Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
+D. Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
+
+Correct Answer: 
+    A 🗳️
+
+Question #34
+
+You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?
+
+A. Run gcloud iam roles list. Review the output section.
+B. Run gcloud iam service-accounts list. Review the output section.
+C. Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.
+D. Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status.
+
+Correct Answer: 
+    C 🗳️
+    A. Wrong, this just shows you all the roles, not users etc. It's not useful.
+    B. Wrong, This will just show service accounts, not users and roles like the question asks
+    C. Correct. I logged onto console and followed the steps and was able to see all the assigned users and roles.
+    D. Wrong. We need to see how the roles are used. I couldn't even see a "Roles" option directly, you need to browse to IAM then to the Roles subsection, which is not useful anyway.
+
+Question #35
+
+You need to create a new billing account and then link it with an existing Google Cloud Platform project. What should you do?
+
+A. Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the existing billing account.
+B. Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.
+C. Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to the existing billing account.
+D. Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the existing billing account.
+
+Correct Answer: 
+    B 🗳️
+
+    billing administration can not create billing account
+    so A
+
+    B is correct. "Project Billing Manager" is just enough to create a NEW billing account.
+
+    https://stackoverflow.com/questions/59559885/project-billing-manager-vs-billing-account-user-gcp
+
+    THB, this one got me a little confused, but I think I figured out the logic:
+
+    I suppose in this question you need to assume you have permissions to create a new billing account. Since both Billing  Administrator and Project Billing Manager roles, do not have enough permissions to create a billing account. Therefore, by   following google cloud best practices, more specifically the principle of least privilege, we have eliminated the options with    Billing Administrator (C and D). Also the question says you need to create a new Billing account (so it does not exist) which  eliminates option A, therefore option B is the most correct answer imo.
+
+    Hope this helps!
+
+Question #36
+
+You have one project called proj-sa where you manage all your service accounts. You want to be able to use a service account from this project to take snapshots of VMs running in another project called proj-vm. What should you do?
+
+A. Download the private key from the service account, and add it to each VMs custom metadata.
+B. Download the private key from the service account, and add the private key to each VM's SSH keys.
+C. Grant the service account the IAM Role of Compute Storage Admin in the project called proj-vm.
+D. When creating the VMs, set the service account's API scope for Compute Engine to read/write.
+
+Correct Answer: 
+    C

@@ -1,0 +1,66 @@
+Question #149
+
+You are running multiple VPC-native Google Kubernetes Engine clusters in the same subnet. The IPs available for the nodes are exhausted, and you want to ensure that the clusters can grow in nodes when needed. What should you do?
+
+A. Create a new subnet in the same region as the subnet being used.
+B. Add an alias IP range to the subnet used by the GKE clusters.
+C. Create a new VPC, and set up VPC peering with the existing VPC.
+D. Expand the CIDR range of the relevant subnet for the cluster.
+
+Correct Answer: 
+    D 🗳️
+
+Question #150
+
+You have a batch workload that runs every night and uses a large number of virtual machines (VMs). It is fault-tolerant and can tolerate some of the VMs being terminated. The current cost of VMs is too high. What should you do?
+
+A. Run a test using simulated maintenance events. If the test is successful, use preemptible N1 Standard VMs when running future jobs.
+B. Run a test using simulated maintenance events. If the test is successful, use N1 Standard VMs when running future jobs.
+C. Run a test using a managed instance group. If the test is successful, use N1 Standard VMs in the managed instance group when running future jobs.
+D. Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.
+
+Correct Answer: 
+    B 🗳️
+    A (100%)
+
+Question #151 #Understand
+
+You are working with a user to set up an application in a new VPC behind a firewall. The user is concerned about data egress. You want to configure the fewest open egress ports. What should you do?
+
+A. Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only the appropriate ports.
+B. Set up a high-priority (1000) rule that pairs both ingress and egress ports.
+C. Set up a high-priority (1000) rule that blocks all egress and a low-priority (65534) rule that allows only the appropriate ports.
+D. Set up a high-priority (1000) rule to allow the appropriate ports.
+
+Correct Answer: 
+    C 🗳️
+    A (75%)
+    D (25%)
+
+    Implied rules
+    Every VPC network has two implied firewall rules. These rules exist, but are not shown in the Cloud Console:
+
+    Implied allow egress rule. An egress rule whose action is allow, destination is 0.0.0.0/0, and priority is the lowest possible (65535) lets any instance send traffic to any destination, except for traffic blocked by Google Cloud. A higher priority firewall rule may restrict outbound access. Internet access is allowed if no other firewall rules deny outbound traffic and if the instance has an external IP address or uses a Cloud NAT instance. For more information, see Internet access requirements.
+
+    Implied deny ingress rule. An ingress rule whose action is deny, source is 0.0.0.0/0, and priority is the lowest possible (65535) protects all instances by blocking incoming connections to them. A higher priority rule might allow incoming access. The default network includes some additional rules that override this one, allowing certain types of incoming connections.
+
+Question #152
+
+Your company runs its Linux workloads on Compute Engine instances. Your company will be working with a new operations partner that does not use Google
+Accounts. You need to grant access to the instances to your operations partner so they can maintain the installed tooling. What should you do?
+
+A. Enable Cloud IAP for the Compute Engine instances, and add the operations partner as a Cloud IAP Tunnel User.
+B. Tag all the instances with the same network tag. Create a firewall rule in the VPC to grant TCP access on port 22 for traffic from the operations partner to instances with the network tag.
+C. Set up Cloud VPN between your Google Cloud VPC and the internal network of the operations partner.
+D. Ask the operations partner to generate SSH key pairs, and add the public keys to the VM instances.
+
+Correct Answer: 
+    B 🗳️
+    A (100%)
+
+    What is Identity-Aware Proxy? Identity-Aware Proxy (IAP) is a Google Cloud Platform service that intercepts web requests sent to your application, authenticates the user making the request using the Google Identity Service, and only lets the requests through if they come from a user you authorize.
+
+    What is IAP tunneling?
+    Image result for IAP Tunnel User
+    IAP TCP forwarding allows you to establish an encrypted tunnel over which you can forward SSH, RDP, and other traffic to VM instances. IAP TCP forwarding also provides you fine-grained control over which users are allowed to establish tunnels and which VM instances users are allowed to connect to.
+
