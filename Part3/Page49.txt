@@ -1,0 +1,58 @@
+Question #193
+
+You are using Data Studio to visualize a table from your data warehouse that is built on top of BigQuery. Data is appended to the data warehouse during the day.
+At night, the daily summary is recalculated by overwriting the table. You just noticed that the charts in Data Studio are broken, and you want to analyze the problem. What should you do?
+
+A. Review the Error Reporting page in the Cloud Console to find any errors.
+B. Use the BigQuery interface to review the nightly job and look for any errors.
+C. Use Cloud Debugger to find out why the data was not refreshed correctly.
+D. In Cloud Logging, create a filter for your Data Studio report.
+
+Correct Answer: 
+    D 🗳️
+
+Question #194
+
+You have been asked to set up the billing configuration for a new Google Cloud customer. Your customer wants to group resources that share common IAM policies. What should you do?
+
+A. Use labels to group resources that share common IAM policies.
+B. Use folders to group resources that share common IAM policies.
+C. Set up a proper billing account structure to group IAM policies.
+D. Set up a proper project naming structure to group IAM policies.
+
+Correct Answer: 
+    B 🗳️
+
+Question #195
+
+You have been asked to create robust Virtual Private Network (VPN) connectivity between a new Virtual Private Cloud (VPC) and a remote site. Key requirements include dynamic routing, a shared address space of 10.19.0.1/22, and no overprovisioning of tunnels during a failover event. You want to follow Google- recommended practices to set up a high availability Cloud VPN. What should you do?
+
+A. Use a custom mode VPC network, configure static routes, and use active/passive routing.
+B. Use an automatic mode VPC network, configure static routes, and use active/active routing.
+C. Use a custom mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and use active/passive routing.
+D. Use an automatic mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and configure policy-based routing.
+
+Correct Answer: 
+    D 🗳️
+
+    On Google Cloud, dynamic routing can be established using Cloud Router. It exchanges network topology information through Border Gateway Protocol (BGP). Cloud Router advertises subnets from its VPC network to another router or gateway via BGP. This is great for setting up VPN between the cloud and on-prem, as topology changes automatically propagate with no manual intervention and higher redundancy for your systems.
+
+    You now have:
+
+    Discovery of remote networks
+    Maintaining up-to-date routing information
+    Choosing the best path to destination networks
+    Ability to find a new best path if the current path is no longer available
+    And a great side effect can be lower latency because Cloud Router learns routes through BGP which allows for optimal data paths to reach its destination, whether that be another network or a VPN gateway to on-premise. Cloud Router is also how Dedicated Interconnect can give you 10 gbp/s bandwidth between your cloud VPC and your peered on-premise data center.
+
+Question #196
+
+You are running multiple microservices in a Kubernetes Engine cluster. One microservice is rendering images. The microservice responsible for the image rendering requires a large amount of CPU time compared to the memory it requires. The other microservices are workloads that are optimized for n1-standard machine types. You need to optimize your cluster so that all workloads are using resources as efficiently as possible. What should you do?
+
+A. Assign the pods of the image rendering microservice a higher pod priority than the other microservices.
+B. Create a node pool with compute-optimized machine type nodes for the image rendering microservice. Use the node pool with general-purpose machine type nodes for the other microservices.
+C. Use the node pool with general-purpose machine type nodes for the image rendering microservice. Create a node pool with compute-optimized machine type nodes for the other microservices.
+D. Configure the required amount of CPU and memory in the resource requests specification of the image rendering microservice deployment. Keep the resource requests for the other microservices at the default.
+
+Correct Answer: 
+    B 🗳️

@@ -1,4 +1,0 @@
-Question #181
-
-You have created a new project in Google Cloud through the gcloud command line interface (CLI) and linked a billing account. You need to create a new Compute
-Engine instance using the CLI. You need to perform the prerequisite steps. What should you do?

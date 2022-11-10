@@ -1,0 +1,50 @@
+Question #181
+
+You have created a new project in Google Cloud through the gcloud command line interface (CLI) and linked a billing account. You need to create a new Compute
+Engine instance using the CLI. You need to perform the prerequisite steps. What should you do?
+
+A. Create a Cloud Monitoring Workspace.
+B. Create a VPC network in the project.
+C. Enable the compute googleapis.com API.
+D. Grant yourself the IAM role of Computer Admin.
+
+Correct Answer: 
+    C 🗳️
+
+Question #182
+
+Your company has developed a new application that consists of multiple microservices. You want to deploy the application to Google Kubernetes Engine (GKE), and you want to ensure that the cluster can scale as more applications are deployed in the future. You want to avoid manual intervention when each new application is deployed. What should you do?
+
+intervention => the act of interfering with the outcome or course especially of a condition or process (as to prevent harm or improve functioning) 
+
+A. Deploy the application on GKE, and add a HorizontalPodAutoscaler to the deployment.
+B. Deploy the application on GKE, and add a VerticalPodAutoscaler to the deployment.
+C. Create a GKE cluster with autoscaling enabled on the node pool. Set a minimum and maximum for the size of the node pool.
+D. Create a separate node pool for each application, and deploy each application to its dedicated node pool.
+
+Correct Answer: 
+    C 🗳️
+
+Question #183
+
+You need to manage a third-party application that will run on a Compute Engine instance. Other Compute Engine instances are already running with default configuration. Application installation files are hosted on Cloud Storage. You need to access these files from the new instance without allowing other virtual machines (VMs) to access these files. What should you do?
+
+A. Create the instance with the default Compute Engine service account. Grant the service account permissions on Cloud Storage.
+B. Create the instance with the default Compute Engine service account. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance.
+C. Create a new service account and assign this service account to the new instance. Grant the service account permissions on Cloud Storage.
+D. Create a new service account and assign this service account to the new instance. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance.
+
+Correct Answer: 
+    C 🗳️
+
+Question #184
+
+You need to configure optimal data storage for files stored in Cloud Storage for minimal cost. The files are used in a mission-critical analytics pipeline that is used continually. The users are in Boston, MA (United States). What should you do?
+
+A. Configure regional storage for the region closest to the users. Configure a Nearline storage class.
+B. Configure regional storage for the region closest to the users. Configure a Standard storage class.
+C. Configure dual-regional storage for the dual region closest to the users. Configure a Nearline storage class.
+D. Configure dual-regional storage for the dual region closest to the users. Configure a Standard storage class.
+
+Correct Answer: 
+    D 🗳️
