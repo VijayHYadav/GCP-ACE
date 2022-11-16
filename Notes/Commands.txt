@@ -1,0 +1,4 @@
+kubectl config use-context
+kubectl config view
+
+gcloud deployment-manager deployments update --config <deployment-config-path>

@@ -1,0 +1,11 @@
+Multi-Regional Storage
+Regional Storage
+Nearline Storage
+Coldline Storage
+
+
+min_idle_instances 
+max_instances 
+min_instances 
+
+

@@ -40,7 +40,7 @@ D. Internal TCP/UDP Load Balancer. Add a firewall rule allowing ingress traffic 
 Correct Answer: 
     C 🗳️
 
-    SSL Proxy Load Balancing is intended for non-HTTP(S) traffic. For HTTP(S) traffic, we recommend that you use HTTP(S) Load Balancing.
+    SSL Proxy Load Balancing is intended for non-HTTP(S) traffic. For HTTP(S) traffic, we recommend that you use HTTP(S) Load Balancing. SSL Proxy Load Balancing support for the following ports: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995, 1883, 3389, 5222, 5432, 5671, 5672, 5900, 5901, 6379, 8085, 8099, 9092, 9200, and 9300. 
 
     https://cloud.google.com/static/load-balancing/images/choose-lb.svg
 

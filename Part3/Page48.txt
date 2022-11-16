@@ -33,7 +33,7 @@ C. Create an SSH keypair and store the public key as a project-wide SSH Key.
 D. Create an SSH keypair and store the private key as a project-wide SSH Key.
 
 Correct Answer: 
-    B 🗳️
+    B 🗳️ B is correct, With TCP forwarding, IAP can protect SSH and RDP access to your VMs hosted on Google Cloud. Your VM instances don't even need public IP addresses.
 
 Question #192
 

@@ -44,6 +44,8 @@ D. Add a network tag of your choice to the instance running the LDAP server. Cre
 
 Correct Answer: 
     C 🗳️
+    GCP Says : Network tags are metadata on compute engine virtual machines that allow you to make firewall rules and routes applicable to specific VM instances. In GKE, you can use network tags to make firewall rules or routes applicable to the node in your cluster.
+
     you can use tags and then set firewall rules for instances with such tag.
     A tag is simply a character string added to a tags field in a resource, such as Compute Engine virtual machine (VM) instances or instance templates. A tag is not a separate resource, so you cannot create it separately. All resources with that string are considered to have that tag. Tags enable you to make firewall rules and routes applicable to specific VM instances.
 

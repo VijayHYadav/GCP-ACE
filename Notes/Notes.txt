@@ -1,1 +1,17 @@
+OS-Login: OS Login uses IAM roles to provide your public SSH key to the instance through your Google Account or a managed user account.
+
+Cloud SQL: one geographic location, small set of operational data,  cost-effective, Point-in-time recovery: binary logging.
+
+autoscaling : Autohealing health check to healthy (HTTP)
+
+managed instance group:  (MIG) is a GCP Compute Engine Resource that’s a set of VM instances managed as one entity. Autoscaling helps your applications effortlessly handle will increase in traffic, whereas reducing value once the necessity for resources is lower. MIG don't support Configuration file
+
+Deployment Manager:  Configuration file
+
+dry run: dry run query to estimate the number of bytes read not return.
+
+instance template: An instance template is a resource that you can use to create virtual machine (VM) instances and managed instance groups (MIGs). Instance templates define the machine type, boot disk image or container image, labels, startup script, and other instance properties.
+
 Pub/Sub is used for streaming analytics and data integration pipelines to ingest and distribute data
+
+

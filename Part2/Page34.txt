@@ -20,6 +20,8 @@ D. Store credentials for your user account with appropriate access for Google se
 Correct Answer: 
     B 🗳️
     When you use a GCP service within your app (code), you have to use its client libraries. When you instantiate a client with client libraries you can pass it a Service Account key, which will define on behalf of which SA the client will be acting. That's how you can configure your app to use a particular service account.
+    
+    DO NOT modify (default) Service account of the VM! big no no. Not recommended by google.
 
 Question #135
 

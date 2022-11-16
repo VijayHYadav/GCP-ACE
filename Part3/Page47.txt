@@ -8,9 +8,9 @@ C. Deploy the application on Kubernetes Engine. For a new release, update the de
 D. Deploy the application on Kubernetes Engine. For a new release, create a new deployment for the new version. Update the service to use the new deployment.
 
 Correct Answer: 
-    A 🗳️
+    A 🗳️ there's no need to create a new service for each update.
 
-Question #186
+Question #186 Understand
 
 You need to add a group of new users to Cloud Identity. Some of the users already have existing Google accounts. You want to follow one of Google's recommended practices and avoid conflicting accounts. What should you do?
 

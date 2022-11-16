@@ -61,3 +61,6 @@ D. Split your BigQuery data warehouse into multiple data warehouses for each bus
 E. Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project.
 
 Correct Answer: BE 🗳️
+    BigQuery offers flat-rate pricing for customers who prefer a stable cost for queries rather then paying the on-demand price per TB of data processed
+    
+    If you have multiple BigQuery projects and users, you can manage costs by requesting a custom quota that specifies a limit on the amount of query data processed per day.

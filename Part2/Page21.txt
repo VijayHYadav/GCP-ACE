@@ -37,7 +37,7 @@ C. Create a CSV sheet with all users' email addresses. Use the gcloud command li
 D. In the G Suite console, add the users to a special group called cloud-console-users@yourdomain.com. Rely on the default behavior of the Cloud Platform to grant users access if they are members of this group.
 
 Correct Answer: 
-    B 🗳️ 
+    B 🗳️  g-suite_email:: your-name@business-domain.com
 
 Question #84 TODO:
 
