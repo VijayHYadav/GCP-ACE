@@ -45,4 +45,4 @@ C. Give ג€project ownerג€ role to crm-databases-proj and bigquery.dataView
 D. Give bigquery.dataViewer role to crm-databases-proj and appropriate roles to web-applications.
 
 Correct Answer: 
-    D 🗳️
+    C 🗳️

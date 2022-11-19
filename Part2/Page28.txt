@@ -23,7 +23,7 @@ C. Create a new project, modify your existing VPC to be a Shared VPC, share that
 D. Ask the security team to grant you the Project Editor role in an existing production project used by another division of your company. Once they grant you that role, replicate the setup you have in the development environment in that project.
 
 Correct Answer: 
-    A 🗳️
+    A 🗳️ "The security team has forbidden the existence of network routes between these 2 environments " . Forbidden means preventing access across environment and why u want to link those network using shared VPC ???
 
 Question #111
 

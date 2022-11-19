@@ -1,0 +1,12 @@
+#Kubernetes
+>> kubectl config use-context
+>> kubectl config view
+
+
+#roles
+gcloud iam roles copy --source="roles/spanner.databaseAdmin" --destination=CustomSpannerDbAdmin --dest-project=PROJECT_ID
+
+# Deployment Manager Update
+gcloud deployment-manager deployments update --config <deployment-config-path>
+
+gcloud config list => to review the Google Cloud configuration used for deployment

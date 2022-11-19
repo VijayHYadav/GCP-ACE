@@ -1,0 +1,2 @@
+Activity log is deprecated
+Note the Stackdriver Logging is now named Cloud Logging.

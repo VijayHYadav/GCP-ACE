@@ -1,0 +1,38 @@
+# Autohealing    
+Autohealing lets you automatically restart apps that are compromised. It promptly detects failed instances and recreates them automatically,
+
+# Load balancing
+Load balancing refers to efficiently distributing incoming network traffic across a group of backend servers, also known as a server farm or server pool.
+
+# Point-in-time
+point-in-time recovery (PITR) provides protection against accidental deletion or writes.
+
+##Bucket
+Standard Storage: None
+Nearline Storage: 30 days
+Coldline Storage: 90 days
+Archive Storage: 365 days
+
+# Payment methods : 
+Payment methods you can add to your payments profile(credit card, debit card, or bank account).
+
+min_instances
+max_instances
+min_idle_instances
+
+maxSurge: 
+maxUnavailable: 
+
+# Deployment Manager: Google Cloud Deployment Manager is an infrastructure management service that makes it simple to create, deploy, and manage Google Cloud Platform resources. (configuration file)
+
+# Cloud Composer: Cloud Composer is a fully managed workflow orchestration service, enabling you to create, schedule, monitor, and manage workflows that span across clouds and on-premises data centers.
+
+# Instance template
+An instance template is a resource that you can use to create virtual machine (VM) instances and managed instance groups (MIGs). Instance templates define the machine type, boot disk image or container image, labels, startup script, and other instance properties.
+
+# Managed Instance Group:  A managed instance group (MIG) is a group of virtual machine (VM) instances that you treat as a single entity. Each VM in a MIG is based on an instance template. If you only need to create multiple VMs, but don't want them grouped together in a MIG, see the bulk instance API.
+
+# Unmanaged Instance Group: An unmanaged instance group is a collection of virtual machines (VMs) that reside in a single zone, VPC network, and subnet. An unmanaged instance group is useful for grouping together VMs that require individual configuration settings or tuning.
+
+# BigQuery: 
+Export your bill to a BigQuery datase

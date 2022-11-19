@@ -21,7 +21,7 @@ C. Set up a proper billing account structure to group IAM policies.
 D. Set up a proper project naming structure to group IAM policies.
 
 Correct Answer: 
-    B 🗳️
+    B 🗳️ Folders are used to group resources that share common IAM policies.
 
 Question #195
 
