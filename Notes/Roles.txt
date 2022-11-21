@@ -1,3 +1,11 @@
-compute.osAdminLogin: In most scenarios, we recommend using OS Login. The OS Login feature lets you use Compute Engine IAM roles to manage SSH access to Linux instances. You can add an extra layer of security by setting up OS Login with two-factor authentication, and manage access at the organization level by setting up organization policies.
+compute.osAdminLogin: In most scenarios, we recommend using OS Login. The OS Login feature lets you 
+use Compute Engine IAM roles to manage SSH access to Linux instances. You can add an extra layer of 
+security by setting up OS Login with two-factor authentication, and manage access at the organization 
+level by setting up organization policies.
+
+enable-oslogin=true After you enable OS Login on one or more instances in your project, those VMs 
+accept connections only from user accounts that have the necessary IAM roles in your project or 
+organization.
 
 
+I have simple rule; if metrics then Monitoring, if Auditing then Logging.
