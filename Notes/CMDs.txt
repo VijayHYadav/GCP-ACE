@@ -10,3 +10,9 @@ gcloud iam roles copy --source="roles/spanner.databaseAdmin" --destination=Custo
 gcloud deployment-manager deployments update --config <deployment-config-path>
 
 gcloud config list => to review the Google Cloud configuration used for deployment
+
+gcloud config subcommand => You want to avoid having to specify this zone with
+each CLI command when managing these instances
+
+gcloud config set container/cluster dev => You want to ensure that future CLI commands by 
+default address this specific cluster What should you do

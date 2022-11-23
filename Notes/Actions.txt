@@ -1,3 +1,10 @@
 You want to configure autohealing for network load balancing
 => Create a managed instance group. Set the Autohealing health check to healthy (HTTP)
 
+Q)You have a Linux VM that must connect to Cloud SQL.You created a service account with 
+the appropriate access rights. You want to make sure that the VM uses this service account 
+instead of the default Compute Engine service account. What should you do?
+=> Download a JSON Private Key for the service account. On the Custom Metadata of the VM, 
+add that JSON as the value for the key compute-engine- service-account.
+
+

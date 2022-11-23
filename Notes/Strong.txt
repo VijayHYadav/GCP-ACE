@@ -1,0 +1,29 @@
+You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What should you do?
+=> Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
+
+You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from those buckets. What should you do?
+=> Using the GCP Console, filter the Activity log to view the information. (53%)
+=> Using the GCP Console, filter the Stackdriver log to view the information. (47%)
+
+
+You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?
+=> Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.
+
+
+You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?
+=> Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.
+
+You built an application on Google Cloud that uses Cloud Spanner. Your support team needs to monitor the environment but should not have access to table data.
+You need a streamlined solution to grant the correct permissions to your support team, and you want to follow Google-recommended practices. What should you do?
+=> Add the support team group to the roles/monitoring.viewer role
+
+You want to add a new auditor to a Google Cloud Platform project. The auditor should be allowed to read, but not modify, all project items.
+How should you configure the auditor's permissions?
+=> Select the built-in IAM project Viewer role. Add the user's account to this role.
+
+You need to verify that a Google Cloud Platform service account was created at a particular time. What should you do?
+=> Filter the Activity log to view the Configuration category. Filter the Resource type to Service Account.
+
+You want to find out when users were added to Cloud Spanner Identity Access Management (IAM) roles on your Google Cloud Platform (GCP) project. What should you do in the GCP Console?
+=> Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles
+

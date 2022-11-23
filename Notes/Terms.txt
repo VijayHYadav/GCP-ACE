@@ -8,6 +8,9 @@ resources in different projects to talk to each other.
         High speed physical connection between on-premises and VPC networks
 
 # VPC Network Peering
+Google Cloud VPC Network Peering allows internal IP address connectivity across 
+two Virtual Private Cloud (VPC) networks regardless of whether they belong to the
+same project or the same organization.
 
 ClusterIP : A virtual private internal IP address is allocated to service. This IP can be used
 only within the cluster. Pods and nodes in cluster can acces this IP address. If we are not
@@ -55,7 +58,9 @@ Archive Storage: 365 days
 # Payment methods : 
 Payment methods you can add to your payments profile(credit card, debit card, or bank account).
 
-min_instances
+min_instances: the minimum number of instances running at any time, 
+traffic or no traffic, rain or shine.
+
 max_instances
 min_idle_instances
 
